@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando classes and construtores</title>
+</head>
+<body>
+  <script>
+
+    class Animal{
+
+      sex
+
+      constructor(props){
+        this.sex = props.sex
+      }
+
+    }
+
+    //HUMAN HERNANDO DE ANIMAL
+    class Human extends Animal{
+      hungry = true
+      name
+      age
+      
+
+      constructor(props){
+
+        //super serve para construir as propriedades da classe Pai
+        super(props)
+
+        if(!props.name)
+          throw Error('Nome é obrigatório')
+
+        this.name = props.name
+        this.age = props.age
+        console.log('Instanciou!!' +name)
+      }
+
+      eat(){
+        this.hungry=false
+      }
+    }
+
+    const person = new Human({
+
+      name:'Geraldo',
+      age:32,
+      sex:'male'
+    })
+  </script>
+</body>
+</html>
