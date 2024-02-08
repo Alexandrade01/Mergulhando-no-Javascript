@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando classes and construtores</title>
+</head>
+<body>
+  <script>
+    class Human{
+      hungry = true
+      name
+      age
+      sex
+
+      constructor(props){
+
+        if(!props.name)
+          throw Error('Nome é obrigatório')
+
+        this.name = props.name
+        this.age = props.age
+        this.sex = props.sex
+        console.log('Instanciou!!' +name)
+      }
+
+      eat(){
+        this.hungry=false
+      }
+    }
+
+    const person = new Human({
+
+      name:'Geraldo',
+      age:32,
+      sex:'male'
+    })
+  </script>
+</body>
+</html>
