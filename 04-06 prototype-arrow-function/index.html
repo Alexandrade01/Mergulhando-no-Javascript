@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando classes and construtores</title>
+</head>
+<body>
+  <script>
+    class Human{
+      hungry = true
+      awake = true
+
+      eat(){
+        this.hungry=false
+      }
+    }
+
+
+    //tudo em JS é objeto
+    //EVITE usar o prototype, se recomenda criar funcoes dentro da classe
+    Human.prototype.sleep = function(){
+        this.awake = false
+      }
+
+    const person = new Human()
+
+  </script>
+</body>
+</html>
