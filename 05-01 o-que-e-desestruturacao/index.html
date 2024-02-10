@@ -9,7 +9,14 @@
   <script>
     const person = {
       name:'Ronaldo',
-      age: 14
+      age: 14,
+      contact:{
+        foo:{
+          bar:{
+            email:'zezinho@hotmail.com'
+          }
+        }
+      }
     }
 
     //desestruturação
@@ -17,8 +24,17 @@
       console.log(`Oi meu nome é ${name} e eu tenho ${age} anos`)
     }
 
+    //desestruturação
     const fruits = ['banada','morango','goiaba']
     const[firstFruit,secondFruit] = fruits
+
+    //desestruturação -- acessando variavel dentro de outros objetos
+    const{name,age,contact:{foo:{bar:{email}}}}  = person
+
+    //alterando o nome da propriedade name
+    const{name: bolacha} = person
+
+
 
   </script>
 </body>
