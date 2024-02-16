@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread operator</title>
+</head>
+<body>
+  <script>
+   // function createUser(name,age,contact1,contact2,contact3){
+    //  const args = Array.from(arguments)
+
+     // return {
+    //      name,
+    //      age,
+          //pegando os tres primeiros elementos de uma maneira mais verbosa
+     //     contact: args.slice(2)
+    //  }
+
+    //}
+
+    function createUser(name,age,...contacts){
+      const args = Array.from(arguments)
+
+      return {
+          name,
+          age,
+          //pegando os tres primeiros elementos utilizando spread, função de agrupamento
+          contacts
+      }
+
+    }
+  </script>
+</body>
+</html>
