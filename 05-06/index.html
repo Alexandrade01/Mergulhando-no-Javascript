@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const user = {
+      name: 'danielbonifacio',
+      email:'contato@daniel.com'
+    }
+
+    //nesse caso user sera referencia, caso newuser seja modificado user tambem será
+    //const newUser = user
+
+    //novo conceito SPREAD  , onde removemos o encapsulador
+    const newUser = {...user}
+
+    newUser.name = 'joaozinho123'
+    newUser.email = 'joao@mail.com'
+
+  </script>
+</body>
+</html>
