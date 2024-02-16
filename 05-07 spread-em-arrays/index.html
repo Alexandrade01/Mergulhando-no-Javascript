@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+<body>
+  <script>
+    const parts = ['ombro','joelho','orelhas']
+    //const sentence = ['cabeça', parts[0],parts[1],'pé']
+
+    //utlizando o spread, podemos inserir sem os 3 pontos 'parts' porem mostrara como um array dentro de outro, o spread liberta os nós
+    const sentence = ['cabeça', ...parts,'pé']
+
+    const immutableArray = ['Select','*','from']
+    //const mutableArray = immutableArray
+    const mutableArray = [...immutableArray]
+    mutableArray.push('Picles')
+  </script>
+</body>
+</html>
