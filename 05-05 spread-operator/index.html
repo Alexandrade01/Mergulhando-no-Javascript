@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+<body>
+  <script>
+
+    // Spread significa espalhar, ou seja, este operador é usado para 'espalhar' os elementos de um array quando interpretado em tempo de execução.
+
+    const parts = ['ombro','joelho']
+    
+    //const sentence = ['cabeca',parts[0],parts[1],'pé']
+    //nao é preciso mapear todo o array, utilizamos o ...parts
+    const sentence = ['cabeca',...parts,'pé']
+
+
+
+    //function createUse(name, age, contact1,contact2,contact3){
+      function createUse(name, age, ...contacts){
+      return {
+        name,
+        age,
+        //contacts: [contact1,contact2,contact3]
+        contacts
+      }
+    }
+
+    const immutableArray=['select','*','from','posts']
+    //nesse caso mutable ira referenciar e portanto quando algo for mudado nele ira mudar tambem em immutablearray
+    //const mutableArray = immutableArray
+
+    //esse é o correto, apenas espelhando pela técnica spread operator
+    const mutableArray = [...immutableArray]
+
+    mutableArray.push('where id = 1')
+  </script>
+</body>
+</html>
