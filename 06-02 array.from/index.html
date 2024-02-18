@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    
+   
+
+    function greet (){
+      
+      //precisamos transformar em arrays primeiramente, para poder usar os argumentos
+      //const args = Array.from(arguments)
+
+      //adicionando uma função extra no args, adicionando o '!!'
+      const args = Array.from(arguments,function(name){
+        return name + '!!'
+      })
+
+
+      args.forEach(element => {
+        console.log(`Hello, ${element}`)
+      });
+    }
+  </script>
+</body>
+</html>
