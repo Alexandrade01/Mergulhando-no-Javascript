@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array.some e Array.every</title>
+</head>
+<body>
+  <script>
+    const convidados = [
+      {name: 'Lucas', age:8},
+      {name: 'Rogerio', age:2},
+      {name: 'Romario', age:9},
+      {name: 'Riquelme', age:6},
+      {name: 'Jonas', age:5}
+    ]
+
+    const novosConvidados = [
+      {name: 'Lucas', age:8},
+      {name: 'Rogerio', age:2},
+      {name: 'Romario', age:9},
+      {name: 'Riquelme', age:6},
+      {name: 'Jonas', age:5}
+    ]
+
+    //Existem maiores de idade na lista de convidados ?
+
+    const hasAdults = convidados.some(busca => busca.age  >= 18)
+
+    //todos os convidados são maiores de idades ?
+
+    const everyoneIsAnChild = convidados.every(busca => busca.age <= 18)
+
+  </script>
+</body>
+</html>
