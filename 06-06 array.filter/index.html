@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array.filter</title>
+</head>
+<body>
+  <script>
+    const students = [
+      {name: 'Lucas', grade:8},
+      {name: 'Rogerio', grade:2},
+      {name: 'Romario', grade:9},
+      {name: 'Riquelme', grade:6},
+      {name: 'Jonas', grade:5}
+    ]
+
+    //filtrando reprovados com nota menor que seis
+    const reprovados = students.filter(nota =>{
+      return nota.grade < 6
+    })
+  </script>
+</body>
+</html>
