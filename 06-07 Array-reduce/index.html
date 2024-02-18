@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array.reduce</title>
+</head>
+<body>
+  <script>
+    const students = [
+      {name: 'Lucas', grade:8},
+      {name: 'Rogerio', grade:2},
+      {name: 'Romario', grade:9},
+      {name: 'Riquelme', grade:6},
+      {name: 'Jonas', grade:5}
+    ]
+
+    //soma das notas de uma forma mais primitiva 
+    //codigo imperativo, possui alguns bugs
+    let totalNota = 0
+    students.forEach(nota => totalNota +=nota)
+
+    const classroomTotalPoints = students.reduce(
+      (prev,current) => {
+        console.log(prev)
+        console.log(current)
+        return prev + current.grade
+      },
+      0
+    )
+  </script>
+</body>
+</html>
