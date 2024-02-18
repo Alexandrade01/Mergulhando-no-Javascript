@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array.map</title>
+</head>
+<body>
+  <script>
+    const fruits = ['Goiaba','Cereja','Maracuja']
+
+    //map é uma alternativa melhor ao foreach
+    //gera um novo array sem alterar nada do antigo, nao tem efeitos colaterais
+    const capitalizedFruits =  fruits.map(element =>{
+      return element.toUpperCase()
+    })
+  </script>
+</body>
+</html>
