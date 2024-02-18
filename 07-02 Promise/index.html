@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando uma promise</title>
+</head>
+<body>
+  <script>
+
+    //Promises são objetos, no JS que representam um valor que pode estar disponivel agora, depois ou nunca
+    //Uma promise pode ser resolvida ou rejeitada
+
+      const promisseOjbect = new Promise((resolve,reject) => {
+        setTimeout(() => {
+          //resolve('🤣')
+          reject('❤')
+        }, 5000);
+      })
+
+
+  </script>
+</body>
+</html>
