@@ -12,7 +12,7 @@ interface Animal  {
 
 // type Person = Human & Animal
 
-const person : Animal = {
+const person : Human = {
   age:22,
   name:'Lucas',
   sex: 'male'
