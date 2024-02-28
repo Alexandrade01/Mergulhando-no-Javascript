@@ -1,5 +1,6 @@
 "use strict";
-function greet(name) {
-    console.log(`Hello, ${name.toUpperCase()}`);
+// criando uma função basica, sendo age por ter uma interrogação é opcional
+function greet(name, age) {
+    console.log(`Hello, ${name.toUpperCase()}, age ${age}`);
 }
-greet('Ronaldo');
+greet('Ronaldo', 33);
