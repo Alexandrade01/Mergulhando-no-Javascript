@@ -7,4 +7,4 @@ const person : Person.WithContacts = {
   contacts: []
 }
 
-//const email:Email = 'jaime@mail.com'
+const email:Person.Email = 'jaime@mail.com'
